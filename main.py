@@ -29,4 +29,4 @@ async def cmd(ctx, command: str):
 async def post(ctx):
     await ctx.respond(file=discord.File("output.png"))
 
-bot.run("MTEwNzc1MDA5ODI4MjIyNTc0NQ.Gg0UMy.plRZ7ztGUgrEc3IIw0hacnn6AAeMJDXtWekFgo")
+bot.run("TOKEN GOES HERE")
