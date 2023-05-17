@@ -1,4 +1,4 @@
-import discord, subprocess, wget, requests, pyrfc6266, shutil
+import discord, subprocess, wget, requests, pyrfc6266 as rfc, shutil
 
 bot = discord.Bot()
 
@@ -10,9 +10,9 @@ async def on_ready():
 async def edit(ctx, input_image_link: str):
     await ctx.respond("editing...")
     requests_input_image = requests.get(str(input_image_link))
-    input_image = pyrfc6266.requests_response_to_filename(requests_input_image)
-    with open(input_image, 'wb') as f:
-        f.write(requests.get(input_image_link).content)
+    input_image = rfc.requests_response_to_filename(requests_input_image)
+    with open(input_image, 'wb') as input_image_file:
+        input_image_file.write(requests.get(input_image_link).content)
     convert_command = "convert -background none " + input_image + " images/jerome_head_small.png -layers flatten output.png"
     subprocess.run(convert_command, shell=True)
     await ctx.send(file=discord.File("output.png"))
