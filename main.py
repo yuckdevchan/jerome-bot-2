@@ -4,7 +4,7 @@ bot = discord.Bot()
 
 cheese_pictures = (
     "https://media.wired.co.uk/photos/606db5957bdd70ad8525ceea/master/w_1600%2Cc_limit/Cheese_01.jpg",
-    "https://static.interfood.com/assets/_1200x630_crop_center-center_82_none/Cheese-3.jpeg?v=1654596221".
+    "https://static.interfood.com/assets/_1200x630_crop_center-center_82_none/Cheese-3.jpeg?v=1654596221",
     "https://www.usdairy.com/optimize/getmedia/6ab03180-cc90-4a03-a339-13b540ecc8a5/american.jpg.jpg.aspx?format=webp",
     "https://images.theconversation.com/files/316919/original/file-20200224-24701-1lk36vg.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Swiss_cheese_cubes.jpg/640px-Swiss_cheese_cubes.jpg",
